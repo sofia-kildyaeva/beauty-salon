@@ -1,0 +1,534 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 14.75rem !important;
+    background: #edeef0;
+}
+
+/*шрифты*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif !important;
+    margin: 0;
+}
+p, a, div {
+    font-family: 'Ubuntu', sans-serif !important;
+}
+p, a {
+    text-decoration: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+/*цвета*/
+.my-lightgreen {
+    color: #06AA6C;
+}
+.my-orange {
+    color: #FBBB1A;
+}
+
+
+/*шапка сайта*/
+.navigation {
+    background: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+.navigation a {
+    font-size: 1.1rem;
+    margin-right: 1rem;
+}
+.logo {
+    width: 18vh;
+}
+.navbar-address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-address p {
+    margin-bottom: 0;
+}
+
+
+
+/*содержание*/
+.image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.button {
+    display: block;
+    border-radius: 50px;
+    border: none;
+    width: 180px;
+    height: 60px;
+    font-size: 1.2rem;
+    background: #FBBB1A;
+    text-align: center;
+    padding: 0.5rem;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+.button:hover {
+    color: #FFFFFF !important;
+    filter: drop-shadow(4px 5px 10px rgba(0, 0, 0, 0.31));
+}
+.button-more {
+    border-radius: 50px;
+    width: 180px;
+    height: 60px;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    transition: 0.5s;
+    display: block;
+    border: 1px solid #FBBB1A;
+    color: #FBBB1A;
+    background: #FFFFFF;
+}
+.button-more:hover {
+    background-color: #FBBB1A;
+    color: #FFFFFF;
+    filter: drop-shadow(4px 5px 10px rgba(0, 0, 0, 0.31));
+}
+.text-description {
+    width: 53rem;
+}
+.padding-page {
+    padding-top: 8rem;
+}
+.margin-top-big {
+    margin-top: 6.25rem !important; /*100px*/
+}
+.margin-top-middle {
+    margin-top: 5rem !important; /*80px*/
+}
+.margin-top-regular {
+    margin-top: 3.125rem !important; /*50px*/
+}
+.margin-top-light {
+    margin-top: 2.5rem !important; /*40px*/
+}
+
+
+
+/*модальное окно для оформления заявки на обратный звонок*/
+.modal-content {
+    border: none !important;
+}
+.welcome-button {
+    background: #06AA6C !important;
+}
+.form-modal {
+    margin: 2rem;
+}
+.message-application {
+    margin: 2rem;
+}
+.message-application h3 {
+    text-align: center;
+    margin: 0 !important;
+}
+
+/*главная страница*/
+.image-welcome {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.welcome-text {
+    position: absolute;
+    width: 35rem;
+    top: 17rem;
+    left: 25rem;
+}
+.welcome-text p {
+    font-size: 1rem;
+    margin-top: 1.2rem;
+}
+.welcome-text h1 {
+    font-size: 3.1rem;
+    letter-spacing: 3px;
+}
+.welcome-text {
+    line-height: 22px;
+}
+.welcome-feedback {
+    width: 100%;
+    background-color: #06AA6C !important;
+    padding: 2.5rem 0;
+}
+.welcome-card {
+    border-radius: 0;
+    border: 0;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: inline-block;
+}
+.welcome-card img {
+    filter: brightness(50%);
+    height: 25vh;
+}
+.welcome-card a {
+    color: white;
+    transition: 1s;
+}
+.card-multy:hover {
+    color: #FBBB1A;
+    transform: scale(1.1);
+    box-shadow: 10px 11px 13px rgba(0, 0, 0, 0.38);
+}
+/*анимация при наведении на карточку сотрудника*/
+.hover-effect-btn {
+    position: relative;
+    width: 100%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: background 0.2s ease;
+}
+.hover-effect-btn:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, 0.3); /* Настройка цвета и прозрачности для блока с заголовком при наведении */
+}
+.hover-effect-btn button {
+    position: absolute;
+    left:30%;
+    top: 45%; /* Отступ сверху */
+    opacity: 0;
+    transition: opacity .35s ease;
+}
+.hover-effect-btn:hover button {
+    opacity: 1;
+}
+
+/*страница с услугами по категории*/
+.button-type {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    color: #FFFFFF;
+    background: #FBBB1A;
+    background-clip: border-box;
+    border: 1px solid #FBBB1A;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.button-type h5 {
+    margin-bottom: 0 !important;
+}
+.button-type:hover {
+    filter: drop-shadow(4px 5px 10px rgba(0, 0, 0, 0.31));
+}
+
+/*страница с сотрудниками студии*/
+.card-employees {
+    height: 25rem !important;
+}
+
+/*страницы для записи на услугу*/
+.choice-button {
+    display: block;
+    color: #FFFFFF;
+    font-size: 1.875rem;
+    width: 100%;
+    height: 108px;
+    border-radius: 4.25px;
+    background: #FBBB1A;
+    transition: 0.5s;
+}
+.choice-button:hover {
+    color: #FFFFFF !important;
+    filter: drop-shadow(4px 5px 10px rgba(0, 0, 0, 0.31));
+}
+.choice-button-continue {
+    color: #FBBB1A;
+    background-color: #FFFFFF;
+    transition: 0.5s;
+}
+.choice-button-continue:hover {
+    color: #FBBB1A !important;
+    background-color: #FFFFFF;
+    filter: drop-shadow(4px 5px 10px rgba(0, 0, 0, 0.31));
+}
+.button-card {
+    transition: 0.5s;
+}
+.button-card:hover {
+    filter: drop-shadow(4px 5px 10px rgba(0, 0, 0, 0.31));
+}
+.entry-img {
+    border-radius: 5rem;
+    width: 10vh;
+    height: 10vh;
+}
+.entry-message {
+    font-size: 1.5rem;
+}
+
+
+
+/*страницы администратора*/
+.button-add {
+    height: 3rem;
+    width: 10rem;
+}
+.button-delete {
+    background-color: #F34334 !important;
+}
+.image-category {
+    width: 40vh;
+    height: 8vh;
+}
+.button-agree {
+    background-color: #00923F !important;
+}
+.button-info {
+    background-color: #FBBB1A !important;
+    color: #FFFFFF !important;
+}
+.select-filter {
+    border: none !important;
+    margin: 0 !important;
+}
+.table-marker {
+    background-color: #eeeeee !important;
+}
+.border-row {
+    border-top: 1px solid #eeeeee;
+}
+.label-input {
+    margin-right: 0.5rem;
+    margin-bottom: 0 !important;
+}
+.button-day {
+
+    height: 3rem !important;
+}
+
+
+
+/*подвал сайта*/
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8.5rem;
+    background-color: #06AA6C;
+}
+.footer .nav-footer {
+    margin: 0;
+    padding: 3rem 0;
+}
+.footer li {
+    list-style-type: none;
+}
+.footer .nav-footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.text-footer {
+    margin-bottom: 0;
+    margin-right: 1rem;
+}
+
+
+
+/*версия для мобильных телефонов*/
+@media (max-width: 768px) {
+    /*основные элементы*/
+    body {
+        margin-bottom: 26.25rem !important;
+    }
+    .text-description {
+        width: 100%;
+    }
+    .row {
+        flex-direction: column !important;
+    }
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10 {
+        width: 100% !important;
+    }
+    .padding-page {
+        padding-top: 10rem;
+    }
+
+
+    /*шапка сайта*/
+    .navigation .container-fluid{
+        align-items: start;
+    }
+    .navbar-address {
+        display: none;
+    }
+    .navbar-toggler-icon {
+        color: #1a1e21;
+    }
+    .navbar-nav {
+        text-align: right;
+        justify-content: right;
+    }
+
+
+    /*главная страница*/
+    .image-welcome img {
+        height: 100vh;
+    }
+    .welcome-text {
+        top: 25vh;
+        left: 0.5rem;
+        width: 55vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .welcome-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .welcome-about {
+        flex-direction: column;
+    }
+    .welcome-about .col-5 p {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .welcome-services {
+        flex-direction: column;
+    }
+
+    .welcome-feedback form .col-12 {
+        flex-direction: column !important;
+    }
+    .welcome-feedback form .col-12 .mb-3 {
+        margin-right: 0 !important;
+    }
+    .welcome-feedback form .row .col-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .welcome-feedback form .row .col-7 .row .col-12 .form-check {
+        text-align: center;
+    }
+    .welcome-feedback form .row .col-7 .row .col-12 .form-check label {
+        width: 40vh;
+        margin-left: 0.5rem;
+    }
+    .welcome-feedback form .button {
+        margin-top: 1.4rem;
+    }
+
+    .welcome-employees .card {
+        margin-bottom: 1rem;
+    }
+
+    .welcome-contacts .col-5 {
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .welcome-contacts .contacts-address {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .welcome-contacts .contacts-address .my-lightgreen {
+        width: 50vh;
+    }
+    .welcome-contacts .contacts-messenger .d-flex {
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /*страницы с услугами*/
+    #CategoryServicesPage .card {
+        margin-bottom: 1rem;
+    }
+    #TypeServicesPage .col-3 {
+        margin-top: 2.5rem;
+    }
+    #TypeServicesPage form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #TypeServicesPage .mb-3 {
+        width: 45vh;
+    }
+    #TypeServicesPage label {
+        text-align: center;
+    }
+    #TypeServicesPage button {
+        margin-top: 1rem;
+    }
+
+
+    /*страница с специалистами*/
+    #Employees .employees-categories {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .employees-cards {
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+
+    /*страницы для записи*/
+    .choice .col-6 {
+        margin-bottom: 1rem;
+    }
+    .choice-graphics {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .choice-graphics .col-1 {
+        margin-bottom: 1rem;
+        width: 7rem !important;
+    }
+    .choice-times {
+        justify-content: center;
+    }
+    .choice-button-continue-p{
+        padding: 0 1rem;
+    }
+
+
+    /*страницы администратора*/
+    #AuthPage form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /*подвал сайта*/
+    .footer {
+        height: 20rem;
+    }
+    .footer .nav-footer {
+        flex-direction: column;
+        padding-bottom: 1rem !important;
+    }
+}
